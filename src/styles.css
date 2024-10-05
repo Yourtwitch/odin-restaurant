@@ -1,0 +1,200 @@
+:root {
+    --primary-btn-color:rgba(137, 91, 54, 0.9);;
+    --primary-bg-color:rgba(137, 91, 54, 0.9);;
+    --primary-box-color:rgba(137, 91, 54, 0.9);
+    --primary-hover-color:rgba(190, 127, 76, 0.9);
+    --primary-border-color:rgba(109, 72, 41, 0.9);
+    --primary-border-radius:32px;
+    --primary-border:8px solid var(--primary-border-color);
+}
+html,body {
+    background-color: rgb(218, 199, 199);
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("./images/steaksbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color: #d3d3d3;
+}
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0 0 0;
+    gap:10px;
+    background-color:var(--primary-bg-color);
+    margin-bottom: 45px;
+}
+.navbutton {
+    width:5vw;
+    height:5vh;
+    background-color:var(--primary-bg-color);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: none;         
+    border-radius: 5px 5px 0 0;   
+    cursor: pointer;
+    color:white;
+}
+.navbutton:hover {
+    background-color:var(--primary-hover-color);
+}
+#content {
+    width:50vw;
+    height:90vh;
+    background-color:var(--primary-box-color);
+    margin:0 auto;
+    border-radius:var(--primary-border-radius);
+    display:flex;
+    align-items: center;
+    padding:60px;
+    flex-direction:column;
+    border:var(--primary-border);
+}
+.heading {
+    width:40vw;
+    height:6vh;
+    background-color:var(--primary-bg-color);
+    border:var(--primary-border);
+    font-size:1.8em;
+    font-weight: bold;
+    text-align: center;
+    padding-top:20px;
+    border-radius: var(--primary-border-radius);
+}
+.icon {
+    width: 36px;
+    height: 36px;
+    margin: 0 20px 10px;
+    vertical-align: middle;
+}
+.reviewContainer {
+    background-color: var(--primary-bg-color);
+    width: 28vw;
+    height: 26vh;
+    border-radius: var(--primary-border-radius);
+    border: var(--primary-border);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top:30px;
+    font-size:1.2em;
+}
+.reviewerName {
+    padding-top:30px;
+    display:block;
+    font-weight:bold;
+}
+.hoursContainer{
+    background-color: var(--primary-bg-color);
+    width: 28vw;
+    height: 26vh;
+    border-radius: var(--primary-border-radius);
+    border: var(--primary-border);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top:30px;
+    font-size:1.2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hoursDays {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoursContainer p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.hoursHeading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 10px 10px 0px;
+    align-self: flex-start;
+}
+
+.locationContainer{
+    background-color: var(--primary-bg-color);
+    width: 28vw;
+    height: 20vh;
+    border-radius: var(--primary-border-radius);
+    border: var(--primary-border);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top:30px;
+    font-size:1.2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.locationHeading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.contactContainer{
+    background-color: var(--primary-bg-color);
+    width: 28vw;
+    height: 26vh;
+    border-radius: var(--primary-border-radius);
+    border: var(--primary-border);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top:20px;
+    font-size:1.2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactContainer p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+.dishContainer {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menuContainer{
+    background-color: var(--primary-bg-color);
+    width: 40vw;
+    height: 30vh;
+    border-radius: var(--primary-border-radius);
+    border: var(--primary-border);
+    padding: 20px 0px 20px 30px;
+    box-sizing: border-box;
+    margin-top:20px;
+    font-size:1.2em;
+}
+.menuContainer p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+.menuItemTitle {
+    font-size:1.1rem;
+    font-weight: bold;
+}
+.menuCategoryTitle {
+    font-size:1.4rem;
+    font-weight: bold;
+    text-align: center;
+    display:block;
+}

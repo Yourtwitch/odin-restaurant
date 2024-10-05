@@ -1,0 +1,34 @@
+import steakIcon from './images/steakicon2.png';
+import { makeContainer, createElement, appendElements, getContent, clearContent, createImage } from './base.js';
+const contactPage = () => {
+    const content = getContent("content");
+    clearContent("content");
+    const heading = createElement("div","heading");
+    const iconBefore = createImage("icon", steakIcon, "Steak Icon");
+    const iconAfter = createImage("icon", steakIcon, "Steak Icon");
+    const text = createElement("span",'',"Contact Us");
+    const chefContainer = makeContainer("chefContainer","contactContainer");
+    const chefHeading = createElement("span","hoursHeading","Joe Swanson");
+    const chefDetails = makeContainer("chefDetails","hoursDays");
+    const chefTitle = createElement("p","","Chef");
+    const chefNumber = createElement("p","","Tel: 555-555-5551");
+    const chefEmail = createElement("p","","E-Mail: joeswanson@joesfakestakehouse.com");
+    const managerContainer = makeContainer("managerContainer","contactContainer");
+    const managerHeading = createElement("span","hoursHeading","Bonnie Swanson");
+    const managerDetails = makeContainer("managerDetails","hoursDays");
+    const managerTitle = createElement("p","","Manager");
+    const managerNumber = createElement("p","","Tel: 555-555-5552");
+    const managerEmail = createElement("p","","E-Mail: bonnieswanson@joesfakestakehouse.com");
+    const waiterContainer = makeContainer("waiterContainer","contactContainer");
+    const waiterHeading = createElement("span","hoursHeading","Peter Griffin");
+    const waiterDetails = makeContainer("waiterDetails","hoursDays");
+    const waiterTitle = createElement("p","","Waiter");
+    const waiterNumber = createElement("p","","Tel: 555-555-5553");
+    const waiterEmail = createElement("p","","E-Mail: petergriffin@joesfakestakehouse.com");
+    appendElements(heading,iconBefore,text,iconAfter);
+    appendElements(chefContainer, chefHeading,chefDetails,chefTitle,chefNumber,chefEmail);
+    appendElements(managerContainer, managerHeading,managerDetails,managerTitle,managerNumber,managerEmail);
+    appendElements(waiterContainer, waiterHeading,waiterDetails,waiterTitle,waiterNumber,waiterEmail);
+    appendElements(content, heading, chefContainer,managerContainer,waiterContainer);
+}
+export default contactPage;
